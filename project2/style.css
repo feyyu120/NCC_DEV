@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+ 
+}
+
+body {
+  background-color: #f5f3ff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2d2d2d;
+}
+
+h1 {
+  color: #6d28d9;
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 1.2rem 0;
+  padding: 0.6rem;
+}
+
+.navbar {
+  background-color: #6d28d9;
+  padding: 1rem 5%;
+  display: flex;
+  flex-direction: row; /* Forces the row layout */
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
+  box-shadow: 0 4px 12px rgba(109, 40, 217, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #8b5cf6;
+  transform: translateY(-2px);
+}
+
+.hero {
+  padding: 3rem 5%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.profile-img {
+  width: 230px;
+  height: 230px;
+  border: 6px solid #8b5cf6;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+  object-fit: cover;
+}
+
+.bio {
+  max-width: 600px;
+  flex: 1;
+}
+
+.bio p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.section {
+  padding: 3.5rem 5%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  color: #6d28d9;
+  font-size: 1.9rem;
+  margin-bottom: 1.8rem;
+  text-align: center;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.1rem;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #6d28d9;
+  padding: 1.1rem 1.4rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(109, 40, 217, 0.2);
+  font-size: 1rem;
+  color: #ede9fe;
+  transition: 0.3s;
+}
+
+.skills-list li:hover {
+  transform: translateY(-3px);
+}
+
+
+table {
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.9rem 1.2rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background-color: #6d28d9;
+  color: white;
+  text-align: center;
+}
+
+td {
+  color: #374151;
+}
+.pending{
+  color:rgb(35, 231, 22);
+  
+}
+
+
+form {
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+input, textarea {
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid #ddd6fe;
+  border-radius: 8px;
+  width: 100%;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+button {
+  background-color: #8b5cf6;
+  color: white;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #6d28d9;
+  transform: translateY(-2px);
+}
+
+
+footer {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background-color: #ede9fe;
+  color: #374151;
+  margin-top: 3rem;
+}
+
+#bottom {
+  background-color: #ede9fe;
+  padding: 2rem 1.2rem;
+  border-radius: 10px;
+  margin: 2rem 5%;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .section h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .navbar {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.9rem;
+  }
+
+  .navbar a{
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  html,body{
+    overflow-x: hidden;
+    
+  }
+  body {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    font-size: 20px;
+    flex-direction: row;
+    gap: 0.5rem;
+     display: flex;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.9rem;
+  }
+
+  .navbar a {
+    width: 90%;
+    text-align: center;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 2.5rem 1.2rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+}
