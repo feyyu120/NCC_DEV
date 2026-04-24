@@ -71,8 +71,8 @@ h1 {
   width: 230px;
   height: 230px;
   border: 6px solid #8b5cf6;
-  border-radius: 50%;
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+  border-radius: 80%;
+  box-shadow: 0 10px 25px rgba(81, 58, 136, 0.3);
   object-fit: cover;
 }
 
